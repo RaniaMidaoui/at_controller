@@ -1,0 +1,32 @@
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: manager-role
+rules:
+- apiGroups:
+  - cnat.testcrd.dev
+  resources:
+  - ats
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - cnat.testcrd.dev
+  resources:
+  - ats/finalizers
+  verbs:
+  - update
+- apiGroups:
+  - cnat.testcrd.dev
+  resources:
+  - ats/status
+  verbs:
+  - get
+  - patch
+  - update

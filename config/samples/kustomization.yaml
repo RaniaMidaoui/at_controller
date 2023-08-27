@@ -1,0 +1,4 @@
+## Append samples of your project ##
+resources:
+- cnat_v1_at.yaml
+#+kubebuilder:scaffold:manifestskustomizesamples

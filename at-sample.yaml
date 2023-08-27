@@ -1,0 +1,7 @@
+apiVersion: cnat.testcrd.dev/v1
+kind: At
+metadata:
+  name: at-sample
+spec:
+  schedule: "2023-08-20T20:52:00Z"
+  command: "echo hello world!"
